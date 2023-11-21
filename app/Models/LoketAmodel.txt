@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class LoketAmodel extends Model
+{
+    protected $table = 'loketa';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['nomer_antrian', 'loketA', 'tgl'];
+
+    public function getLastQueueNumber()
+    {
+        $query = $this->select('nomer_antrian')
+            ->orderBy('nomer_antrian', 'DESC')
+            ->first();
+
+        return $query ? $query['nomer_antrian'] : null;
+    }
+
+    public function generateQueueNumber()
+    {
+        $lastQueueNumber = $this->getLastQueueNumber();
+
+        if (empty($lastQueueNumber)) {
+            return 'A-01';
+        } else {
+            $id = str_pad((int)substr($lastQueueNumber, 2) + 1, 2, '0', STR_PAD_LEFT);
+            return 'A-' . $id;
+        }
+    }
+
+    public function saveQueue($data)
+    {
+        return $this->insert($data);
+    }
+}
