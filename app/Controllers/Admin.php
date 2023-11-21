@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Dashboard extends BaseController
+class Admin extends BaseController
 {
     public function index(): string
     {
-        return view('dashboard');
+        return view('Admin');
     }
 }
