@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Pages::index');
 $routes->get('/Antrian/(:segment)', 'Antrian::index/$1');
 
-$routes->get('/Admin/(:segment)', 'Admin::index/$1');
+$routes->get('/Dashboard/(:segment)', 'Dashboard::index/$1');
 
 
 $routes->setAutoRoute(true);
