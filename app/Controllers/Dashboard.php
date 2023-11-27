@@ -12,8 +12,11 @@ class Dashboard extends BaseController
         return view('sidebar_dashboard/get', $data);
     }
 
-//     public function panggil_antrian()
-//     {
-//         return view('rekap_Antrian');
-//     }
+    public function rekap_antrian()
+    {
+        $data = [
+            'title' => 'Rekapan Antrian'
+        ];
+        return view('/sidebar_dashboard/rekap_antrian', $data);
+    }
  }

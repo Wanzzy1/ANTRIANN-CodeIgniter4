@@ -13,7 +13,8 @@
       </ul>
   </li>
   <li class="nav-item ">
-      <a href="<?= site_url('Rekap'); ?>" class="nav-link "><i class="fas fa-solid fa-print"></i><span>Rekap
+      <a href="<?= site_url('dashboard/rekap_antrian'); ?>" class="nav-link "><i
+              class="fas fa-solid fa-print"></i><span>Rekap
               Antrian</span></a>
   </li>
 

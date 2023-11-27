@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Models\LoketaModel;
 
 class Antrian extends BaseController
 {
