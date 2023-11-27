@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Dashboard | Admin</title>
+    <title><?= $title ?></title>
 
     <!-- General CSS Files -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -259,13 +259,15 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Ini Main Side bar -->
             <div class="main-sidebar">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="index.html">Dashboard</a>
+                        <a href="/Dashboard">Dashboard</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="index.html">DB</a>
+                        <a href="/Dashboard">DB</a>
                     </div>
                     <ul class="sidebar-menu">
 
@@ -273,12 +275,15 @@
                     </ul>
 
                     <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-                        <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
+                        <a href="https://www.codeigniter.com/user_guide/index.html"
+                            class="btn btn-primary btn-lg btn-block btn-icon-split">
                             <i class="fas fa-rocket"></i> Documentation
                         </a>
                     </div>
                 </aside>
             </div>
+            <!-- End Side Bar -->
+
 
             <!-- Main Content -->
             <div class="main-content">
