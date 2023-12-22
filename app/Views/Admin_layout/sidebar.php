@@ -14,9 +14,5 @@
   </li>
   <li class="nav-item ">
       <a href="<?= site_url('dashboard/rekap_antrian'); ?>" class="nav-link "><i
-              class="fas fa-solid fa-print"></i><span>Rekap
-              Antrian</span></a>
+              class="fas fa-solid fa-print"></i><span>Rekap Antrian</span></a>
   </li>
-
-  <li class=""><a class="nav-link" href=""><i class="far fa-square"></i>
-          <span>Blank Page</span></a></li>
